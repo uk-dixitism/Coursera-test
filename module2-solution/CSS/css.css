@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 h1 {
   margin-bottom: 50px;
   text-align: center;
@@ -8,12 +9,48 @@ h1 {
   font-family: all;
 }
 
+section {
+  background-color: #808080;
+  overflow: auto;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+#chicken, #sushi, #paneer {
+  font-size: 100%;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 5px;
+  border: 2px solid black;
+  border-top: 0px;
+  border-right: 0px;
+  width: 40%;
+  text-align: center;
+  float: right;
+}
+
+#chicken {
+  background-color: #FFB6C1;
+}
+
+#sushi {
+  background-color: #FF1439;
+  color: white;
+}
+
+#paneer {
+  background-color: #FFFF99;
+}
+
 p {
   height: 150px;
-  border: 1px solid black;
-  margin: 0px;
+  border: 0px solid black;
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-family: Helvetica;
   color: black;
+  margin-top: 40px;
+  margin-bottom: 0px;
 }
 
 div div {
@@ -21,46 +58,21 @@ div div {
   font-size: 150%;
 }
 
-#color1 {
-  background-color: green;
-}
-
-#color2 {
-  background-color: blue;
-}
-
-#color3 {
-  background-color: red;
-}
-
-#p1 {
+div div p {
   background-color: #808080;
   text-align: left;
-  font-size: 70%;
+  font-size: 75%;
+  margin-top: 50px;
 }
 
-#p2 {
-  background-color: #808080;
-  text-align: left;
-  font-size: 70%;
-}
-
-#p3 {
-  background-color: #808080;
-  text-align: left;
-  font-size: 70%;
-}
-
-/* Simple Responsive Framework. */
 .row {
   width: 100%;
 }
 
-/********** Large devices only **********/
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 2px solid black;
+    
   }
   .col-lg-1 {
     width: 8.33%;
@@ -100,11 +112,10 @@ div div {
   }
 }
 
-/********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid black;
+  
   }
   .col-md-1 {
     width: 8.33%;
@@ -147,7 +158,7 @@ div div {
 @media (max-width: 767px) {
   .col-sm-12 {
     float: left;
-    border: 1px solid black;
+  
   }
   .col-sm-12 {
     width: 100%;
